@@ -28,28 +28,28 @@ class Queue {
 }
 
 
-// const queue = new Queue((item, complete) => {
-// 	// do something with item
-// 	console.time('任务编号：' + item.no)
-// 	setTimeout(() => {
-// 		console.timeEnd('任务编号：' + item.no)
-// 		complete()
-// 	}, item.due)
-// })
-// queue.add({
-// 	no: 1,
-// 	due: 5000
-// })
+const queue = new Queue((item, complete) => {
+	// do something with item
+	console.time('任务编号：' + item.no)
+	setTimeout(() => {
+		console.timeEnd('任务编号：' + item.no)
+		complete()
+	}, item.due)
+})
+queue.add({
+	no: 1,
+	due: 5000
+})
 
-// queue.add({
-// 	no: 2,
-// 	due: 4000
-// })
+queue.add({
+	no: 2,
+	due: 4000
+})
 
-// queue.add({
-// 	no: 3,
-// 	due: 1000
-// })
+queue.add({
+	no: 3,
+	due: 1000
+})
 
 // 初版
 /*
