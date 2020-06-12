@@ -69,6 +69,5 @@ class Storage {
     }
   }
   
-  // export default new Storage("APP", 1000 * 60 * 60 * 24 * 30);
-  module.exports = { Storage }
+  export default new Storage("APP", 1000 * 60 * 60 * 24 * 30);
   
